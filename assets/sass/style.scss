@@ -1,0 +1,116 @@
+$border: 2px; // Replace 2px with your desired border size
+
+.navbar {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #222222;
+}
+.navbar-1,
+.header,
+.trending {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 226, 255, 1) 0%,
+    rgba(248, 225, 255, 0.8547794117647058) 38%,
+    rgba(255, 251, 254, 0.8575805322128851) 57%,
+    rgba(234, 200, 242, 0.8387650085763293) 100%
+  );
+}
+
+.navbar-brand {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.navbar-toggler {
+  border: none !important;
+}
+
+.big-heading {
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.first-gradient {
+  background: -webkit-linear-gradient(
+    136.91deg,
+    #468ef9 -12.5%,
+    #0c66ee 107.5%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.second-gradient {
+  background: -webkit-linear-gradient(
+    169.4deg,
+    #3984f4 -6.01%,
+    #0cd3ff 36.87%,
+    #2f7cf0 78.04%,
+    #0e65e8 103.77%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-button {
+  position: relative;
+}
+.gradient-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background: linear-gradient(
+      169.4deg,
+      #3984f4 -6.01%,
+      #0cd3ff 36.87%,
+      #2f7cf0 78.04%,
+      #0e65e8 103.77%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.trending .border-radius {
+  background-color: #fff;
+  border-radius: 55px;
+}
+.trending a {
+  text-decoration: none;
+}
+
+input {
+  padding: 15px 20px;
+  border: double 2px transparent;
+  border-radius: 15px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, orange, yellow);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  // Header styling
+}
+.trusted {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) -9.25%,
+    rgba(255, 255, 255, 0.6) -9.25%,
+    rgba(244, 249, 255, 0.7) 108.74%
+  );
+}
