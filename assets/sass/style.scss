@@ -98,6 +98,7 @@ $border: 2px; // Replace 2px with your desired border size
 
 input {
   padding: 15px 20px;
+  width: 50%;
   border: double 2px transparent;
   border-radius: 15px;
   background-image: linear-gradient(white, white),
@@ -106,6 +107,32 @@ input {
   background-clip: padding-box, border-box;
   // Header styling
 }
+.select {
+  padding: 15px 5px;
+  width: 120px;
+  border: double 2px;
+  border-radius: 15px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, orange, yellow);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+/* Yuvarlak şekil için */
+.select option {
+  border-radius: 50%;
+  background-size: cover; /* Resmi kaplamak için */
+  background-position: center; /* Resmi ortalamak için */
+}
+
+/* Her bir seçenek için bayrak resmi */
+#country option[value="1"] {
+  background-image: url("/assets/images/usa-flag.jpg"); /* USA bayrağı resmi */
+  height: 30px; /* Resim boyutu */
+  width: 40px;
+  padding-left: 50px; /* Resim ile metin arasındaki boşluk */
+  background-repeat: no-repeat; /* Resmin tekrarlanmaması */
+}
+
 .trusted {
   background: linear-gradient(
     180deg,
@@ -113,4 +140,20 @@ input {
     rgba(255, 255, 255, 0.6) -9.25%,
     rgba(244, 249, 255, 0.7) 108.74%
   );
+}
+.cards {
+  position: relative;
+}
+
+.card1 {
+  position: absolute;
+  left: 35%;
+}
+.card2 {
+  position: absolute;
+  left: 15%;
+}
+.card3 {
+  position: absolute;
+  left: -5%;
 }
