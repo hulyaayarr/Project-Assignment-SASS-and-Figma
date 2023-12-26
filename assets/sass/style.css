@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .navbar {
   font-family: Poppins;
   font-size: 18px;
@@ -96,22 +95,6 @@ input {
   background-clip: padding-box, border-box;
 }
 
-/* Yuvarlak şekil için */
-.select option {
-  border-radius: 50%;
-  background-size: cover; /* Resmi kaplamak için */
-  background-position: center; /* Resmi ortalamak için */
-}
-
-/* Her bir seçenek için bayrak resmi */
-#country option[value="1"] {
-  background-image: url("/assets/images/usa-flag.jpg"); /* USA bayrağı resmi */
-  height: 30px; /* Resim boyutu */
-  width: 40px;
-  padding-left: 50px; /* Resim ile metin arasındaki boşluk */
-  background-repeat: no-repeat; /* Resmin tekrarlanmaması */
-}
-
 .trusted {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) -9.25%, rgba(255, 255, 255, 0.6) -9.25%, rgba(244, 249, 255, 0.7) 108.74%);
 }
@@ -133,4 +116,25 @@ input {
 .card3 {
   position: absolute;
   left: -5%;
+}
+
+.check {
+  color: #2f7cf0;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.tool {
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.star {
+  position: absolute;
+  left: 8%;
+  bottom: 75%;
 }/*# sourceMappingURL=style.css.map */

@@ -117,21 +117,6 @@ input {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-/* Yuvarlak şekil için */
-.select option {
-  border-radius: 50%;
-  background-size: cover; /* Resmi kaplamak için */
-  background-position: center; /* Resmi ortalamak için */
-}
-
-/* Her bir seçenek için bayrak resmi */
-#country option[value="1"] {
-  background-image: url("/assets/images/usa-flag.jpg"); /* USA bayrağı resmi */
-  height: 30px; /* Resim boyutu */
-  width: 40px;
-  padding-left: 50px; /* Resim ile metin arasındaki boşluk */
-  background-repeat: no-repeat; /* Resmin tekrarlanmaması */
-}
 
 .trusted {
   background: linear-gradient(
@@ -156,4 +141,19 @@ input {
 .card3 {
   position: absolute;
   left: -5%;
+}
+.check {
+  color: #2f7cf0;
+}
+.wrapper {
+  position: relative;
+}
+.tool {
+  height: max-content;
+  width: max-content;
+}
+.star {
+  position: absolute;
+  left: 8%;
+  bottom: 75%;
 }
