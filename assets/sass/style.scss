@@ -21,7 +21,15 @@ $border: 2px; // Replace 2px with your desired border size
     rgba(241, 239, 254, 1) 89%
   );
 }
-
+.fire-emoji::before {
+  content: "🔥 ";
+}
+.rocket-emoji::before {
+  content: "🚀 ";
+}
+.diamond-emoji::before {
+  content: "💎 ";
+}
 .navbar-brand {
   font-family: Poppins;
   font-size: 35px;
@@ -60,13 +68,8 @@ $border: 2px; // Replace 2px with your desired border size
 }
 
 .second-gradient {
-  background: -webkit-linear-gradient(
-    169.4deg,
-    #3984f4 -6.01%,
-    #0cd3ff 36.87%,
-    #2f7cf0 78.04%,
-    #0e65e8 103.77%
-  );
+  background: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -83,17 +86,40 @@ $border: 2px; // Replace 2px with your desired border size
   bottom: 0;
   border-radius: 50px;
   border: 2px solid transparent;
-  background: linear-gradient(
-      169.4deg,
-      #3984f4 -6.01%,
-      #0cd3ff 36.87%,
-      #2f7cf0 78.04%,
-      #0e65e8 103.77%
-    )
-    border-box;
+
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
+  background: linear-gradient(
+    169.4deg,
+    #3984f4 -6.01%,
+    #0cd3ff 36.87%,
+    #2f7cf0 78.04%,
+    #0e65e8 103.77%
+  );
+}
+
+.buy-trade-margin {
+  margin-top: 10%;
+}
+.buy-trade-img {
+  width: 543.22px;
+  height: 536px;
+}
+
+.sphere {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  left: 30%;
+  top: 25%;
+  z-index: -1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 .trending .border-radius {
