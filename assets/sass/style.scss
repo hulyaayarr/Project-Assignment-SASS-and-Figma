@@ -2,7 +2,7 @@ $border: 2px; // Replace 2px with your desired border size
 
 .navbar {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
@@ -12,12 +12,13 @@ $border: 2px; // Replace 2px with your desired border size
 .navbar-1,
 .header,
 .trending {
+  background: rgb(241, 237, 254);
   background: linear-gradient(
-    90deg,
-    rgba(254, 226, 255, 1) 0%,
-    rgba(248, 225, 255, 0.8547794117647058) 38%,
-    rgba(255, 251, 254, 0.8575805322128851) 57%,
-    rgba(234, 200, 242, 0.8387650085763293) 100%
+    304deg,
+    rgba(241, 237, 254, 1) 0%,
+    rgba(240, 237, 254, 1) 17%,
+    rgba(245, 253, 255, 1) 46%,
+    rgba(241, 239, 254, 1) 89%
   );
 }
 
@@ -38,14 +39,21 @@ $border: 2px; // Replace 2px with your desired border size
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .alignment {
+    text-align: left !important;
+  }
 }
 
 .first-gradient {
-  background: -webkit-linear-gradient(
-    136.91deg,
-    #468ef9 -12.5%,
-    #0c66ee 107.5%
+  background: linear-gradient(
+    169.4deg,
+    #3984f4 -6.01%,
+    #0cd3ff 36.87%,
+    #2f7cf0 78.04%,
+    #0e65e8 103.77%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
