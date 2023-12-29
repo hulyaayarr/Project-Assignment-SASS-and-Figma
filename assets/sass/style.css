@@ -10,10 +10,13 @@
 }
 
 .navbar-1,
-.header,
-.trending {
+.header {
   background: rgb(241, 237, 254);
   background: linear-gradient(304deg, rgb(241, 237, 254) 0%, rgb(240, 237, 254) 17%, rgb(245, 253, 255) 46%, rgb(241, 239, 254) 89%);
+}
+
+.trending {
+  border-radius: 15%;
 }
 
 .fire-emoji::before {

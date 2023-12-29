@@ -10,8 +10,7 @@ $border: 2px; // Replace 2px with your desired border size
   color: #222222;
 }
 .navbar-1,
-.header,
-.trending {
+.header {
   background: rgb(241, 237, 254);
   background: linear-gradient(
     304deg,
@@ -20,6 +19,9 @@ $border: 2px; // Replace 2px with your desired border size
     rgba(245, 253, 255, 1) 46%,
     rgba(241, 239, 254, 1) 89%
   );
+}
+.trending {
+  border-radius: 15%;
 }
 .fire-emoji::before {
   content: "🔥 ";
