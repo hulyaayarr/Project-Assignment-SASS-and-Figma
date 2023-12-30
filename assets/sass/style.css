@@ -167,17 +167,6 @@ input {
   color: #2f7cf0;
 }
 
-.wrapper {
-  position: relative;
-}
-
-.tool {
-  height: -moz-max-content;
-  height: max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .star {
   position: absolute;
   left: 8%;
