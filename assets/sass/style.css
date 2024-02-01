@@ -171,4 +171,12 @@ input {
   position: absolute;
   left: 8%;
   bottom: 75%;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

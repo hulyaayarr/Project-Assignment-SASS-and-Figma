@@ -187,3 +187,10 @@ input {
   left: 8%;
   bottom: 75%;
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
