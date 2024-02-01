@@ -173,10 +173,23 @@ input {
   bottom: 75%;
 }
 
+.accordion-button {
+  padding-left: 0px !important;
+}
+
 .accordion-button:not(.collapsed) {
   background-color: #fff;
 }
 
 .accordion-button:focus {
   box-shadow: none;
+}
+
+.top-button {
+  background-color: #fafafa;
+  color: #666666;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  width: -moz-max-content;
+  width: max-content;
 }/*# sourceMappingURL=style.css.map */
