@@ -11,8 +11,8 @@
 
 .navbar-1,
 .header {
-  background: rgb(241, 237, 254);
-  background: linear-gradient(304deg, rgb(241, 237, 254) 0%, rgb(240, 237, 254) 17%, rgb(245, 253, 255) 46%, rgb(241, 239, 254) 89%);
+  background: rgb(250, 249, 255);
+  background: linear-gradient(304deg, rgb(250, 249, 255) 0%, rgb(255, 255, 255) 17%, rgb(245, 253, 255) 46%, rgb(234, 231, 255) 100%);
 }
 
 .trending {
@@ -196,4 +196,30 @@
 
 .footer {
   margin-top: 6rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .section {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .section .section__item {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+  .section .section__item:not(:last-child) {
+    margin-right: 10px; /* Adjust margin as needed */
+    border-right: 1px solid lightgrey; /* Border between sections */
+    padding-right: 10px; /* Add padding to separate border from content */
+  }
+}
+
+.lines {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }/*# sourceMappingURL=style.css.map */
