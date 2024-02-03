@@ -132,7 +132,7 @@ $border: 2px; // Replace 2px with your desired border size
   text-decoration: none;
 }
 
-input {
+.buy-trade-margin input {
   padding: 15px 20px;
   width: 50%;
   border: double 2px transparent;
@@ -204,4 +204,8 @@ input {
   border: 1px solid #dddddd;
   border-radius: 8px;
   width: max-content;
+}
+
+.footer {
+  margin-top: 6rem;
 }

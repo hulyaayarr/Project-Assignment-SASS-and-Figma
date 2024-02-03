@@ -120,7 +120,7 @@
   text-decoration: none;
 }
 
-input {
+.buy-trade-margin input {
   padding: 15px 20px;
   width: 50%;
   border: double 2px transparent;
@@ -192,4 +192,8 @@ input {
   border-radius: 8px;
   width: -moz-max-content;
   width: max-content;
+}
+
+.footer {
+  margin-top: 6rem;
 }/*# sourceMappingURL=style.css.map */
