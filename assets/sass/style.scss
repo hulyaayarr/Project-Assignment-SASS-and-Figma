@@ -218,4 +218,24 @@ $border: 2px; // Replace 2px with your desired border size
 .lines {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  margin-top: 0px;
+}
+.border-right {
+  border-bottom: 0.8px solid #dddddd;
+  border-right: none;
+
+  @media (min-width: 992px) {
+    border-bottom: none;
+    border-right: 0.8px solid #dddddd;
+  }
+}
+.columns {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @media (min-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
