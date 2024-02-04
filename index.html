@@ -37,7 +37,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <img src="/assets/images/brand.png" alt="" />
+            <img
+              src="/assets/images/brand.png"
+              class="img-fluid"
+              style="padding-left: 0px !important"
+              alt=""
+            />
             <button
               class="navbar-toggler"
               type="button"
@@ -107,7 +112,7 @@
       <div class="container">
         <div class="row align-items-center" style="padding-bottom: 120px">
           <div
-            class="col-xs-12 col-sm-12 col-md-7 col-lg-6 mx-auto alignment text-center py-5 position-relative"
+            class="col-xs-12 col-md-5 mx-auto alignment text-center py-5 position-relative"
           >
             <p class="fs-5 fw-bold first-gradient">SIGN UP TODAY</p>
             <h1 class="big-heading pb-3">
@@ -163,24 +168,12 @@
               </button>
             </div>
           </div>
-          <div class="d-none d-lg-block col-lg-6 position-relative">
+          <div class="d-none d-lg-flex ps-5 col-md-7">
             <img
-              src="/assets/images/header-img.png
+              src="/assets/images/header.png
             "
               alt=""
-              class="ps-5 ms-5 img-fluid"
-            />
-            <img
-              src="/assets/images/header-blue-sphere.png"
-              class="img-fluid position-absolute"
-              alt=""
-              style="top: 10%; left: 27%"
-            />
-            <img
-              src="/assets/images/header-orange-sphere.png"
-              class="img-fluid position-absolute"
-              alt=""
-              style="left: 95%; bottom: 35%"
+              class="img-fluid"
             />
           </div>
         </div>
@@ -188,103 +181,25 @@
     </section>
 
     <!--Trending Section-->
-    <section class="trending">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 px-lg-4 align-items-center">
-            <div class="row">
-              <div class="fs-4 py-5 d-flex justify-content-between">
-                <div class="fw-bold fs-5">
-                  <span class="fire-emoji"></span> Trending
-                </div>
-                <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
-                  >More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="11"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      ,
-                      stroke-width="1"
-                      ,
-                      stroke="#0d6efd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6 col-lg-4 text-muted">Name</div>
-              <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
-              <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
-            </div>
-            <!--Bitcoin-->
-            <div class="row mt-4">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/btc.png"
-                    alt=""
-                    class="py-0 px-0 mx-0 my-0"
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Bitcoin</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$43,180.13
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
-                <img
-                  src="/assets/images/graphs/graph.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-            <hr />
-            <!--Ethereum-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/eth.png"
-                    alt=""
-                  />
 
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Ethereum</h7>
-                </div>
+    <div class="container trending">
+      <div class="row">
+        <div
+          class="col-lg-4 px-lg-4 align-items-center border-right-header mt-5"
+        >
+          <div class="row">
+            <div class="fs-4 d-flex justify-content-between">
+              <div class="fw-bold fs-5">
+                <span class="fire-emoji"></span> Trending
               </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
+              <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
+                >More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="red"
-                  class="bi bi-dash"
+                  width="11"
+                  height="11"
+                  fill="currentColor"
+                  class="bi bi-chevron-compact-right"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -292,349 +207,197 @@
                     ,
                     stroke-width="1"
                     ,
-                    stroke="red"
-                    d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"
-                  /></svg
-                >$3,480.65
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
-                <img
-                  src="/assets/images/graphs/graph.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-            <hr />
-            <!--Solana-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/sol.png"
-                    alt=""
+                    stroke="#0d6efd"
+                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
                   />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Solana</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$150,20
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-6 col-lg-4 text-muted">Name</div>
+            <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
+            <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
+          </div>
+          <!--Bitcoin-->
+          <div class="row mt-4">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/btc.png"
                   alt=""
+                  class="py-0 px-0 mx-0 my-0"
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Bitcoin</h7>
               </div>
             </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$43,180.13
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--Ethereum-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/coins/eth.png"
+                  alt=""
+                />
 
-            <hr />
-            <!--Dogecoin-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Dogecoin</h7>
-                </div>
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Ethereum</h7>
               </div>
-              <div class="col-6 col-lg-5 mb-5 mb-lg-0 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0,1572
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="red"
+                class="bi bi-dash"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="red"
+                  d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"
+                /></svg
+              >$3,480.65
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--Solana-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/sol.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Solana</h7>
               </div>
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$150,20
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
 
-          <div class="col-lg-4 px-lg-4">
-            <!--Top Gainers Part-->
-            <div class="row">
-              <div class="fs-5 py-5 d-flex justify-content-between">
-                <div class="fw-bold">
-                  <span class="rocket-emoji mx-0 px-0"></span>Top Gainers
-                </div>
-                <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
-                  >More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="11"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      ,
-                      stroke-width="1"
-                      ,
-                      stroke="#0d6efd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6 col-lg-4 text-muted">Name</div>
-              <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
-              <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
-            </div>
-            <!--Pappay-->
-            <div class="row mt-4">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">PAPPAY</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.00374
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+          <hr />
+          <!--Dogecoin-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/doge.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Dogecoin</h7>
               </div>
             </div>
-            <hr />
-            <!--Bitcoin Asia-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Bitcoin&nbsp;Asia</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.002096
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
-                <img
-                  src="/assets/images/graphs/graph.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
+            <div class="col-6 col-lg-5 mb-5 mb-lg-0 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0,1572
             </div>
-            <hr />
-            <!--MoonRock-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">MoonRock</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.004907
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
-                <img
-                  src="/assets/images/graphs/graph.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-            <hr />
-            <!--NinjaFloki-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">NinjaFloki</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 mb-5 mb-lg-0 py-1 ps-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.000123
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
-                <img
-                  src="/assets/images/graphs/graph.svg"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
-          <div class="col-lg-4 px-lg-4">
-            <!--Recently Added Part-->
-            <div class="row">
-              <div class="fs-5 py-5 d-flex justify-content-between">
-                <div class="fw-bold">
-                  <span class="diamond-emoji"></span> Recently Added
-                </div>
-                <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
-                  >More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="11"
-                    height="11"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      ,
-                      stroke-width="1"
-                      ,
-                      stroke="#0d6efd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
+        </div>
+
+        <div class="col-lg-4 px-lg-4 border-right-header mt-5">
+          <!--Top Gainers Part-->
+          <div class="row">
+            <div class="fs-5 d-flex justify-content-between">
+              <div class="fw-bold">
+                <span class="rocket-emoji mx-0 px-0"></span>Top Gainers
               </div>
-            </div>
-            <div class="row">
-              <div class="col-6 col-lg-4 text-muted">Name</div>
-              <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
-              <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
-            </div>
-            <!--Metacraft-->
-            <div class="row mt-4">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Metacraft</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
+              <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
+                >More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
+                  width="11"
+                  height="11"
+                  fill="currentColor"
+                  class="bi bi-chevron-compact-right"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -642,39 +405,193 @@
                     ,
                     stroke-width="1"
                     ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.02096
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+                    stroke="#0d6efd"
+                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-6 col-lg-4 text-muted">Name</div>
+            <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
+            <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
+          </div>
+          <!--Pappay-->
+          <div class="row mt-4">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/doge.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">PAPPAY</h7>
               </div>
             </div>
-            <hr />
-            <!--Frog-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Frog</h7>
-                </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.00374
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--Bitcoin Asia-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/coins/doge.png"
+                  alt=""
+                />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Bitcoin&nbsp;Asia</h7>
               </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.002096
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--MoonRock-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/coins/doge.png"
+                  alt=""
+                />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">MoonRock</h7>
+              </div>
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.004907
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--NinjaFloki-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/coins/doge.png"
+                  alt=""
+                />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">NinjaFloki</h7>
+              </div>
+            </div>
+            <div class="col-6 col-lg-5 mb-5 mb-lg-0 py-1 ps-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.000123
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 px-lg-4">
+          <!--Recently Added Part-->
+          <div class="row">
+            <div class="fs-5 py-5 d-flex justify-content-between">
+              <div class="fw-bold">
+                <span class="diamond-emoji"></span> Recently Added
+              </div>
+              <a href="#" class="fs-6 m-0 pt-1 fw-semibold"
+                >More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
+                  width="11"
+                  height="11"
+                  fill="currentColor"
+                  class="bi bi-chevron-compact-right"
                   viewBox="0 0 16 16"
                 >
                   <path
@@ -682,149 +599,196 @@
                     ,
                     stroke-width="1"
                     ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.02096
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+                    stroke="#0d6efd"
+                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-lg-4 text-muted">Name</div>
+            <div class="col-6 col-lg-5 ps-4 text-muted">Price</div>
+            <div class="d-none d-lg-block col-lg-3 text-muted">Chart</div>
+          </div>
+          <!--Metacraft-->
+          <div class="row mt-4">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/doge.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Metacraft</h7>
               </div>
             </div>
-            <hr />
-            <!--Musk Doge-->
-            <div class="row">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h7 class="ps-2 mx-0 my-0 fw-semibold">Musk&nbsp;Doge</h7>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.004907
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.02096
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--Frog-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/doge.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Frog</h7>
               </div>
             </div>
-            <hr />
-            <!--2SHARE-->
-            <div class="row mb-5 pb-5 mb-lg-0 pb-lg-0">
-              <div class="col-6 col-lg-4">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid"
-                    src="/assets/images/coins/doge.png"
-                    alt=""
-                  />
-                  <h class="ps-2 mx-0 my-0 fw-semibold">2SHARE</h>
-                </div>
-              </div>
-              <div class="col-6 col-lg-5 ps-4 py-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#28C165"
-                  class="bi bi-plus"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    ,
-                    stroke-width="1"
-                    ,
-                    stroke="#28C165"
-                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
-                  /></svg
-                >$0.000123
-              </div>
-              <div class="d-none d-lg-block col-lg-3">
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.02096
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--Musk Doge-->
+          <div class="row">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
                 <img
-                  src="/assets/images/graphs/graph.svg"
                   class="img-fluid"
+                  src="/assets/images/coins/doge.png"
                   alt=""
                 />
+                <h7 class="ps-2 mx-0 my-0 fw-semibold">Musk&nbsp;Doge</h7>
               </div>
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.004907
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <!--2SHARE-->
+          <div class="row mb-5 pb-5 mb-lg-0 pb-lg-0">
+            <div class="col-6 col-lg-4">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid"
+                  src="/assets/images/coins/doge.png"
+                  alt=""
+                />
+                <h class="ps-2 mx-0 my-0 fw-semibold">2SHARE</h>
+              </div>
+            </div>
+            <div class="col-6 col-lg-5 ps-4 py-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#28C165"
+                class="bi bi-plus"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  ,
+                  stroke-width="1"
+                  ,
+                  stroke="#28C165"
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+                /></svg
+              >$0.000123
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <img
+                src="/assets/images/graphs/graph.svg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--Buy and trade Section-->
     <section class="buy-trade">
       <div class="container">
-        <div class="row mt-5 pt-5">
-          <div class="col-12 col-lg-7 order-lg-2 text-center ps-5 px-lg-5">
-            <div class="position-relative">
-              <img
-                src="/assets/images/buy-trade-img.png"
-                class="img-fluid buy-trade-img"
-                style="width: 543.22px; height: 536px"
-                alt=""
-              />
-
-              <img
-                src="/assets/images/Ellipse 14.png"
-                class="img-fluid sphere"
-                alt=""
-              />
-              <img
-                src="/assets/images/Ellipse 15.png"
-                class="img-fluid sphere"
-                alt=""
-              />
-              <img
-                src="/assets/images/buy-trade-orange-sphere.png"
-                class="img-fluid position-absolute"
-                alt=""
-                style="top: 34%; left: 85%"
-              />
-              <img
-                src="/assets/images/buy-trade-blue-big-sphere.png"
-                class="img-fluid position-absolute"
-                alt=""
-                style="top: 50%; left: 10%"
-              />
-              <img
-                src="/assets/images/buy-trade-blue-small-sphere.png"
-                class="img-fluid position-absolute"
-                alt=""
-                style="top: 90%; left: 25%"
-              />
-            </div>
+        <div class="row my-5">
+          <div class="col-12 col-lg-7 order-lg-2 d-flex justify-content-end">
+            <img
+              src="/assets/images/buy-and-trade.png"
+              class="img-fluid"
+              alt=""
+            />
           </div>
 
-          <div class="col-10 col-lg-5 order-lg-1 mx-auto buy-trade-margin">
+          <div
+            class="col-10 col-lg-5 order-lg-1 mx-auto d-flex align-items-center buy-trade-margin"
+          >
             <div class="row">
               <h3 class="fw-bold fs-1">
                 Buy & trade on the original crypto exchange.
@@ -834,34 +798,28 @@
                 Crypto Coin. We accept BTC crypto-currency
               </p>
               <div class="row">
-                <div class="col-6">
-                  <p class="d-inline-block">
-                    <span class="input">
-                      <input type="text" placeholder="Amount" />
-                      <span></span>
-                    </span>
-                  </p>
+                <div class="col-8">
+                  <input type="text" placeholder="Amount" />
                 </div>
-                <div class="col-6">
-                  <div>
-                    <select class="select" id="country">
-                      <option value="1">USA</option>
-                      <option value="2"></option>
-                    </select>
-                  </div>
+                <div class="col-4">
+                  <select class="select" id="country">
+                    <option
+                      value="1"
+                      class="d-flex justify-content-center"
+                      style="
+                        background-image: url(/assets/images/coins/btc.png);
+                      "
+                    >
+                      <span>
+                        <img src="/assets/images/coins/btc.png" alt="" /> </span
+                      >USA
+                    </option>
+                    <option value="2"></option>
+                  </select>
                 </div>
               </div>
 
-              <p>
-                <span class="input">
-                  <input type="text" placeholder="Amount" />
-                  <span></span>
-                </span>
-              </p>
-
-              <button class="btn btn-primary mb-5 rounded-5 py-3">
-                Buy Now
-              </button>
+              <a class="btn btn-primary my-5 rounded-5 py-3"> Buy Now </a>
             </div>
             <!--
              <section class="section">
@@ -1374,5 +1332,21 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!--Select-->
+    <script>
+      // JavaScript to handle the image display
+      const customSelect = document.getElementById("custom-select");
+      const imageContainer = document.createElement("div");
+      imageContainer.style.display = "inline-block";
+
+      customSelect.addEventListener("change", function () {
+        const selectedOption = this.options[this.selectedIndex];
+        const imageUrl = selectedOption.getAttribute("data-image");
+        imageContainer.innerHTML = `<img src="${imageUrl}" alt="Selected Image" style="max-width: 50px; max-height: 50px;">`;
+      });
+
+      customSelect.insertAdjacentElement("afterend", imageContainer);
+    </script>
   </body>
 </html>

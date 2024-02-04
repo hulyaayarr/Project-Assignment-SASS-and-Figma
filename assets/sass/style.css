@@ -16,7 +16,9 @@
 }
 
 .trending {
-  border-radius: 15%;
+  padding-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 8px 8px 24px 0px rgb(181, 184, 200);
 }
 
 .fire-emoji::before {
@@ -87,15 +89,6 @@
   background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
 }
 
-.buy-trade-margin {
-  margin-top: 10%;
-}
-
-.buy-trade-img {
-  width: 543.22px;
-  height: 536px;
-}
-
 .sphere {
   position: absolute;
   width: 380px;
@@ -120,22 +113,28 @@
   text-decoration: none;
 }
 
+@media (min-width: 992px) {
+  .border-right-header {
+    border-right: 1px solid #eaeaea;
+  }
+}
+
 .buy-trade-margin input {
   padding: 15px 20px;
-  width: 50%;
+  width: 100%;
   border: double 2px transparent;
   border-radius: 15px;
-  background-image: linear-gradient(white, white), linear-gradient(to right, orange, yellow);
+  background: linear-gradient(white, white), linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
 
 .select {
-  padding: 15px 5px;
-  width: 120px;
-  border: double 2px;
+  padding: 15px 20px;
+  width: 100%;
+  border: double 2px transparent;
   border-radius: 15px;
-  background-image: linear-gradient(white, white), linear-gradient(to right, orange, yellow);
+  background: linear-gradient(white, white), linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
