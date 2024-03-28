@@ -1,4 +1,15 @@
-$border: 2px; // Replace 2px with your desired border size
+$border: 2px;
+$brownColor: #666666;
+$light-color: #dddddd;
+$border: 0.8px solid $light-color;
+$linear-gradient-1: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
+$linear-gradient-2: linear-gradient(
+  169.4deg,
+  #3984f4 -6.01%,
+  #0cd3ff 36.87%,
+  #2f7cf0 78.04%,
+  #0e65e8 103.77%
+);
 
 .navbar {
   font-family: Poppins;
@@ -20,6 +31,21 @@ $border: 2px; // Replace 2px with your desired border size
     rgba(234, 231, 255, 1) 100%
   );
 }
+.navbar-toggler {
+  border: none !important;
+}
+.big-heading {
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.second-gradient {
+  background: $linear-gradient-1;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .trending {
   padding-bottom: 50px;
   border-radius: 30px;
@@ -37,24 +63,6 @@ $border: 2px; // Replace 2px with your desired border size
 .diamond-emoji::before {
   content: "💎 ";
 }
-.navbar-brand {
-  font-family: Poppins;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 53px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.navbar-toggler {
-  border: none !important;
-}
-
-.big-heading {
-  font-family: Poppins;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
 
 @media (min-width: 992px) {
   .alignment {
@@ -63,20 +71,7 @@ $border: 2px; // Replace 2px with your desired border size
 }
 
 .first-gradient {
-  background: linear-gradient(
-    169.4deg,
-    #3984f4 -6.01%,
-    #0cd3ff 36.87%,
-    #2f7cf0 78.04%,
-    #0e65e8 103.77%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.second-gradient {
-  background: linear-gradient(136.91deg, #468ef9 -12.5%, #0c66ee 107.5%);
-
+  background: $linear-gradient-2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -97,13 +92,7 @@ $border: 2px; // Replace 2px with your desired border size
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
-  background: linear-gradient(
-    169.4deg,
-    #3984f4 -6.01%,
-    #0cd3ff 36.87%,
-    #2f7cf0 78.04%,
-    #0e65e8 103.77%
-  );
+  background: $linear-gradient-2;
 }
 
 .sphere {
@@ -134,42 +123,6 @@ $border: 2px; // Replace 2px with your desired border size
   }
 }
 
-.buy-trade-margin input {
-  padding: 15px 20px;
-  width: 100%;
-  border: double 2px transparent;
-  border-radius: 15px;
-  background: linear-gradient(white, white),
-    linear-gradient(
-      169.4deg,
-      #3984f4 -6.01%,
-      #0cd3ff 36.87%,
-      #2f7cf0 78.04%,
-      #0e65e8 103.77%
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  // Header styling
-}
-
-// Pure css Select
-.select {
-  padding: 15px 20px;
-  width: 100%;
-  border: double 2px transparent;
-  border-radius: 15px;
-  background: linear-gradient(white, white),
-    linear-gradient(
-      169.4deg,
-      #3984f4 -6.01%,
-      #0cd3ff 36.87%,
-      #2f7cf0 78.04%,
-      #0e65e8 103.77%
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}
-
 .trusted {
   background: linear-gradient(
     180deg,
@@ -178,22 +131,7 @@ $border: 2px; // Replace 2px with your desired border size
     rgba(244, 249, 255, 0.7) 108.74%
   );
 }
-.cards {
-  position: relative;
-}
 
-.card1 {
-  position: absolute;
-  left: 35%;
-}
-.card2 {
-  position: absolute;
-  left: 15%;
-}
-.card3 {
-  position: absolute;
-  left: -5%;
-}
 .check {
   color: #2f7cf0;
 }
@@ -216,33 +154,33 @@ $border: 2px; // Replace 2px with your desired border size
 
 .top-button {
   background-color: #fafafa;
-  color: #666666;
-  border: 1px solid #dddddd;
+  color: $brownColor;
+  border: 1px solid $light-color;
   border-radius: 8px;
   width: max-content;
 }
 
 .footer {
   margin-top: 6rem;
-  color: #666666;
+  color: $brownColor;
 
   a {
-    color: #666666;
+    color: $brownColor;
     text-decoration: none;
   }
 }
 .lines {
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   margin-top: 0px;
 }
 .border-right {
-  border-bottom: 0.8px solid #dddddd;
+  border-bottom: $border;
   border-right: none;
 
   @media (min-width: 992px) {
     border-bottom: none;
-    border-right: 0.8px solid #dddddd;
+    border-right: $border;
   }
 }
 .columns {
@@ -254,4 +192,46 @@ $border: 2px; // Replace 2px with your desired border size
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+.input_style {
+  border: none;
+  width: 100%;
+  text-align: right;
+}
+.input_style:focus {
+  outline: none;
+}
+@mixin wrapper {
+  width: 100%;
+  border: double 2px transparent;
+  border-radius: 15px;
+  background: linear-gradient(white, white), $linear-gradient-2;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.wrapper-input {
+  @include wrapper;
+  padding: 15px 20px;
+}
+.label_style {
+  color: transparent;
+  background-image: $linear-gradient-1;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 500;
+  padding-right: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: max-content;
+  border-right: 1px solid transparent; /* Set the border to transparent */
+  border-image: $linear-gradient-1 1; /* Use border-image to set gradient as border */
+}
+
+.wrapper-select {
+  @include wrapper;
+  height: 66px;
+  padding: 10px 15px;
+}
+#country {
+  border: none;
 }
